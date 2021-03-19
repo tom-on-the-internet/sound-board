@@ -24,6 +24,7 @@ list() {
 download() {
   filepath="$HOME"/sounds/"$4".mp3
   # get the urls needed for ffmpeg
+  # based on https://unix.stackexchange.com/a/388148
   audio_url=$(youtube-dl --youtube-skip-dash-manifest -g "$1" | awk 'NR==2')
 
   ffmpeg -y -ss "$2" -to "$3" -i "$audio_url" -map 0:a -c:a mp3 "$filepath"
