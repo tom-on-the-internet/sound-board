@@ -3,7 +3,7 @@
 A soundboard written hastily in bash.
 It can download sounds from the web.
 
-See video:
+See video: [https://youtu.be/8juEYavtAVg](https://youtu.be/8juEYavtAVg)
 
 ## Usage
 
