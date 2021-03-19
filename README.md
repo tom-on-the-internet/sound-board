@@ -7,6 +7,7 @@ See video: [https://youtu.be/8juEYavtAVg](https://youtu.be/8juEYavtAVg)
 
 ## Usage
 
+```
 See this help message
 sound-board.bash -h (or --help)
 
@@ -18,9 +19,11 @@ sound-board.bash soundname
 
 Download sound
 sound-board.bash url start_time end_time soundname
+```
 
 ## sxhkdrc snippet example
 
+```
 shift + ctrl + {n,e,i,o}
   { sound=yeah;         text='yeah yeah yeah!'; \
   , sound=diesel;       text='VIM diesel';   \
@@ -28,4 +31,4 @@ shift + ctrl + {n,e,i,o}
   , sound=garbage;      text='Proprietary garbage!';  \
   } \
  notify-send $text; sb $sound
-
+ ```
