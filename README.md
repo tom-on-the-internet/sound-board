@@ -18,3 +18,14 @@ sound-board.bash soundname
 
 Download sound
 sound-board.bash url start_time end_time soundname
+
+## sxhkdrc snippet example
+
+shift + ctrl + {n,e,i,o}
+  { sound=yeah;         text='yeah yeah yeah!'; \
+  , sound=diesel;       text='VIM diesel';   \
+  , sound=supereasy;    text='super easy! barely an inconvenience'; \
+  , sound=garbage;      text='Proprietary garbage!';  \
+  } \
+ notify-send $text; sb $sound
+
